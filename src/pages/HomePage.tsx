@@ -1,6 +1,7 @@
 import React from 'react';
 import HeroSection from '../components/HeroSection';
 import StatsSection from '../components/StatsSection';
+import ClientsSection from '../components/ClientsSection';
 import ProductsSection from '../components/ProductsSection';
 import ChannelPlaygroundSection from '../components/ChannelPlaygroundSection';
 import SolutionsSection from '../components/SolutionsSection';
@@ -16,6 +17,7 @@ export function HomePage() {
     <main>
       <HeroSection />
       <StatsSection />
+      <ClientsSection />
       <ProductsSection />
       <ChannelPlaygroundSection />
       <SolutionsSection />

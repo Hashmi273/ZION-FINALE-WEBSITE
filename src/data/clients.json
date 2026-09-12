@@ -1,0 +1,92 @@
+[
+  {
+    "name": "The Guardians",
+    "slug": "the-guardians",
+    "src": "uploads/clients/client-20260818072033-e7596f6e.png",
+    "localPath": "/clients/the-guardians.png"
+  },
+  {
+    "name": "Justo",
+    "slug": "justo",
+    "src": "uploads/clients/client-20260817095923-7c568757.jpg",
+    "localPath": "/clients/justo.jpg"
+  },
+  {
+    "name": "Onboard",
+    "slug": "onboard",
+    "src": "uploads/clients/client-20260818072352-71b6b72f.png",
+    "localPath": "/clients/onboard.png"
+  },
+  {
+    "name": "The Estatemant",
+    "slug": "the-estatemant",
+    "src": "uploads/clients/client-20260818071030-42c1704a.png",
+    "localPath": "/clients/the-estatemant.png"
+  },
+  {
+    "name": "Triveni",
+    "slug": "triveni",
+    "src": "uploads/clients/client-20260818072727-8a0526e0.png",
+    "localPath": "/clients/triveni.png"
+  },
+  {
+    "name": "Veena Developer",
+    "slug": "veena-developer",
+    "src": "uploads/clients/client-20260818071250-26875755.png",
+    "localPath": "/clients/veena-developer.png"
+  },
+  {
+    "name": "Sethia",
+    "slug": "sethia",
+    "src": "uploads/clients/client-20260818071331-b8f21fa9.png",
+    "localPath": "/clients/sethia.png"
+  },
+  {
+    "name": "Crescent",
+    "slug": "crescent",
+    "src": "uploads/clients/client-20260818071403-b8980ec0.png",
+    "localPath": "/clients/crescent.png"
+  },
+  {
+    "name": "Haware",
+    "slug": "haware",
+    "src": "uploads/clients/client-20260818073017-5df0d60d.png",
+    "localPath": "/clients/haware.png"
+  },
+  {
+    "name": "Satva",
+    "slug": "satva",
+    "src": "uploads/clients/client-20260818071512-1b3ddfd5.png",
+    "localPath": "/clients/satva.png"
+  },
+  {
+    "name": "Kanakia",
+    "slug": "kanakia",
+    "src": "uploads/clients/client-20260818073206-25b5f168.png",
+    "localPath": "/clients/kanakia.png"
+  },
+  {
+    "name": "Arkade",
+    "slug": "arkade",
+    "src": "uploads/clients/client-20260817103719-816c0e44.webp",
+    "localPath": "/clients/arkade.webp"
+  },
+  {
+    "name": "TryCity",
+    "slug": "trycity",
+    "src": "uploads/clients/client-20260818072552-6ae7e816.png",
+    "localPath": "/clients/trycity.png"
+  },
+  {
+    "name": "Sunteck",
+    "slug": "sunteck",
+    "src": "uploads/clients/client-20260818073334-23426009.png",
+    "localPath": "/clients/sunteck.png"
+  },
+  {
+    "name": "Anarock",
+    "slug": "anarock",
+    "src": "uploads/clients/client-20260817095856-b9560f43.png",
+    "localPath": "/clients/anarock.png"
+  }
+]

@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShieldCheck, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
 
-// Import all client logos from src/assets/clients so Vite bundles them as hashed assets
+// Import all client logos from src/assets/clients
 import theGuardiansLogo from '../assets/clients/the-guardians.png';
 import justoLogo from '../assets/clients/justo.jpg';
 import onboardLogo from '../assets/clients/onboard.png';
@@ -41,10 +41,10 @@ export default function ClientsSection() {
   const row2 = clientList.slice(8);
 
   return (
-    <section id="clients" className="py-20 relative bg-white border-b border-[#E2E8F0] overflow-hidden">
+    <section id="clients" className="py-20 relative bg-[#F8FAFC] border-b border-[#E2E8F0] overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#EEF4FF]/40 via-white to-white pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-gradient-to-r from-[#D6E4FF]/30 via-[#FF6B00]/05 to-[#D6E4FF]/30 rounded-full blur-[90px] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#EEF4FF]/50 via-white to-[#F8FAFC] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-gradient-to-r from-[#D6E4FF]/40 via-[#FF6B00]/06 to-[#D6E4FF]/40 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         
@@ -69,42 +69,39 @@ export default function ClientsSection() {
 
         {/* Quick Trust Highlights Pill Bar */}
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mb-12 reveal">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
             <CheckCircle2 className="w-4 h-4 text-zion-orange" />
             <span>500+ Enterprise Deployments</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
             <ShieldCheck className="w-4 h-4 text-zion-blue" />
             <span>100% TRAI & DLT Compliant Routes</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
             <TrendingUp className="w-4 h-4 text-emerald-600" />
             <span>99.9% On-Time Delivery Rate</span>
           </div>
         </div>
 
-        {/* Dual Infinite Scrolling Ticker (Left to Right & Right to Left) */}
+        {/* Dual Infinite Scrolling Ticker (Full Color Original Logos) */}
         <div className="relative w-full overflow-hidden py-4">
           {/* Gradient Masks on Left & Right for seamless fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#F8FAFC] via-[#F8FAFC]/80 to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#F8FAFC] via-[#F8FAFC]/80 to-transparent z-20 pointer-events-none" />
 
           {/* Row 1 - Marquee Forward */}
           <div className="animate-marquee gap-5 sm:gap-7 mb-5">
             {[...row1, ...row1, ...row1].map((client, idx) => (
               <div
                 key={`row1-${client.slug}-${idx}`}
-                className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-4 flex items-center justify-center shadow-sm hover:shadow-lg transition-all duration-300 card-lift"
+                className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
               >
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-14 sm:max-h-16 max-w-[85%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105"
+                  className="max-h-16 sm:max-h-18 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
                   loading="lazy"
                 />
-                <span className="absolute bottom-1 text-[9px] font-semibold text-zion-slate opacity-0 group-hover:opacity-100 transition-opacity">
-                  {client.name}
-                </span>
               </div>
             ))}
           </div>
@@ -114,24 +111,21 @@ export default function ClientsSection() {
             {[...row2, ...row2, ...row2].map((client, idx) => (
               <div
                 key={`row2-${client.slug}-${idx}`}
-                className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-4 flex items-center justify-center shadow-sm hover:shadow-lg transition-all duration-300 card-lift"
+                className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
               >
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-14 sm:max-h-16 max-w-[85%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105"
+                  className="max-h-16 sm:max-h-18 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
                   loading="lazy"
                 />
-                <span className="absolute bottom-1 text-[9px] font-semibold text-zion-slate opacity-0 group-hover:opacity-100 transition-opacity">
-                  {client.name}
-                </span>
               </div>
             ))}
           </div>
         </div>
 
         {/* Client Grid Showcase */}
-        <div className="mt-14 pt-12 border-t border-[#EEF4FF] reveal">
+        <div className="mt-14 pt-12 border-t border-[#E2E8F0] reveal">
           <div className="text-center mb-8">
             <span className="text-xs font-bold uppercase tracking-widest text-zion-blue">
               Featured Client Network
@@ -142,14 +136,14 @@ export default function ClientsSection() {
             {clientList.map((client, idx) => (
               <div
                 key={client.slug}
-                className="bg-white/90 border border-[#D6E4FF] hover:border-zion-blue rounded-xl p-4 flex flex-col items-center justify-center gap-2.5 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
+                className="bg-white border border-[#D6E4FF] hover:border-zion-blue rounded-xl p-4 flex flex-col items-center justify-center gap-3 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
                 style={{ transitionDelay: `${idx * 40}ms` }}
               >
-                <div className="h-12 w-full flex items-center justify-center">
+                <div className="h-14 w-full flex items-center justify-center">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-h-10 max-w-[85%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                    className="max-h-12 max-w-[90%] object-contain transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>

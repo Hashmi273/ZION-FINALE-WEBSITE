@@ -1,22 +1,22 @@
 import React from 'react';
 import { ShieldCheck, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
 
-// Import crisp full-color vector SVG client logos
-import theGuardiansLogo from '../assets/clients/the-guardians.svg';
-import justoLogo from '../assets/clients/justo.svg';
-import onboardLogo from '../assets/clients/onboard.svg';
-import theEstatemantLogo from '../assets/clients/the-estatemant.svg';
-import triveniLogo from '../assets/clients/triveni.svg';
-import veenaDeveloperLogo from '../assets/clients/veena-developer.svg';
-import sethiaLogo from '../assets/clients/sethia.svg';
-import crescentLogo from '../assets/clients/crescent.svg';
-import hawareLogo from '../assets/clients/haware.svg';
-import satvaLogo from '../assets/clients/satva.svg';
-import kanakiaLogo from '../assets/clients/kanakia.svg';
-import arkadeLogo from '../assets/clients/arkade.svg';
-import trycityLogo from '../assets/clients/trycity.svg';
-import sunteckLogo from '../assets/clients/sunteck.svg';
-import anarockLogo from '../assets/clients/anarock.svg';
+// Exact original client images from clickconnectmedia.in
+import theGuardiansLogo from '../assets/clients/the-guardians.png';
+import justoLogo from '../assets/clients/justo.jpg';
+import onboardLogo from '../assets/clients/onboard.png';
+import theEstatemantLogo from '../assets/clients/the-estatemant.png';
+import triveniLogo from '../assets/clients/triveni.png';
+import veenaDeveloperLogo from '../assets/clients/veena-developer.png';
+import sethiaLogo from '../assets/clients/sethia.png';
+import crescentLogo from '../assets/clients/crescent.png';
+import hawareLogo from '../assets/clients/haware.png';
+import satvaLogo from '../assets/clients/satva.png';
+import kanakiaLogo from '../assets/clients/kanakia.png';
+import arkadeLogo from '../assets/clients/arkade.webp';
+import trycityLogo from '../assets/clients/trycity.png';
+import sunteckLogo from '../assets/clients/sunteck.png';
+import anarockLogo from '../assets/clients/anarock.png';
 
 const clientList = [
   { name: 'The Guardians', slug: 'the-guardians', logo: theGuardiansLogo },
@@ -41,9 +41,9 @@ export default function ClientsSection() {
   const row2 = clientList.slice(8);
 
   return (
-    <section id="clients" className="py-20 relative bg-[#F8FAFC] border-b border-[#E2E8F0] overflow-hidden">
+    <section id="clients" className="py-20 relative bg-white border-b border-[#E2E8F0] overflow-hidden">
       {/* Background ambient lighting */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#EEF4FF]/50 via-white to-[#F8FAFC] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#EEF4FF]/40 via-white to-white pointer-events-none" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-gradient-to-r from-[#D6E4FF]/40 via-[#FF6B00]/06 to-[#D6E4FF]/40 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
@@ -69,25 +69,25 @@ export default function ClientsSection() {
 
         {/* Quick Trust Highlights Pill Bar */}
         <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mb-12 reveal">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
             <CheckCircle2 className="w-4 h-4 text-zion-orange" />
             <span>500+ Enterprise Deployments</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
             <ShieldCheck className="w-4 h-4 text-zion-blue" />
             <span>100% TRAI & DLT Compliant Routes</span>
           </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
+          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
             <TrendingUp className="w-4 h-4 text-emerald-600" />
             <span>99.9% On-Time Delivery Rate</span>
           </div>
         </div>
 
-        {/* Dual Infinite Scrolling Ticker (Full Permanent Colors) */}
+        {/* Dual Infinite Scrolling Ticker (Exact original image files as on clickconnectmedia.in) */}
         <div className="relative w-full overflow-hidden py-4">
           {/* Gradient Masks on Left & Right for seamless fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#F8FAFC] via-[#F8FAFC]/80 to-transparent z-20 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-[#F8FAFC] via-[#F8FAFC]/80 to-transparent z-20 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
 
           {/* Row 1 - Marquee Forward */}
           <div className="animate-marquee gap-5 sm:gap-7 mb-5">
@@ -99,7 +99,7 @@ export default function ClientsSection() {
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="w-full h-full max-h-16 sm:max-h-20 object-contain transition-transform duration-300 transform group-hover:scale-105"
+                  className="max-h-16 sm:max-h-20 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
@@ -116,7 +116,7 @@ export default function ClientsSection() {
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="w-full h-full max-h-16 sm:max-h-20 object-contain transition-transform duration-300 transform group-hover:scale-105"
+                  className="max-h-16 sm:max-h-20 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
@@ -125,7 +125,7 @@ export default function ClientsSection() {
         </div>
 
         {/* Client Grid Showcase */}
-        <div className="mt-14 pt-12 border-t border-[#E2E8F0] reveal">
+        <div className="mt-14 pt-12 border-t border-[#EEF4FF] reveal">
           <div className="text-center mb-8">
             <span className="text-xs font-bold uppercase tracking-widest text-zion-blue">
               Featured Client Network

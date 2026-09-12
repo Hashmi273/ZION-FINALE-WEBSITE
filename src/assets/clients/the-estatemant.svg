@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="100%" height="100%">
+  <rect width="280" height="80" rx="10" fill="#0C1B33"/>
+  <g transform="translate(20, 15)">
+    <text x="120" y="20" font-family="'Playfair Display', serif" font-size="11" font-weight="700" fill="#E5C158" text-anchor="middle" letter-spacing="4">— THE —</text>
+    <text x="120" y="38" font-family="'Playfair Display', 'Plus Jakarta Sans', serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">ESTATEMANT</text>
+    <text x="120" y="50" font-family="'Inter', sans-serif" font-size="8" font-weight="600" fill="#E5C158" text-anchor="middle" letter-spacing="3">REAL ESTATE ADVISORS</text>
+  </g>
+</svg>

@@ -1,22 +1,22 @@
 import React from 'react';
 import { ShieldCheck, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
 
-// Import all client logos from src/assets/clients
-import theGuardiansLogo from '../assets/clients/the-guardians.png';
-import justoLogo from '../assets/clients/justo.jpg';
-import onboardLogo from '../assets/clients/onboard.png';
-import theEstatemantLogo from '../assets/clients/the-estatemant.png';
-import triveniLogo from '../assets/clients/triveni.png';
-import veenaDeveloperLogo from '../assets/clients/veena-developer.png';
-import sethiaLogo from '../assets/clients/sethia.png';
-import crescentLogo from '../assets/clients/crescent.png';
-import hawareLogo from '../assets/clients/haware.png';
-import satvaLogo from '../assets/clients/satva.png';
-import kanakiaLogo from '../assets/clients/kanakia.png';
-import arkadeLogo from '../assets/clients/arkade.webp';
-import trycityLogo from '../assets/clients/trycity.png';
-import sunteckLogo from '../assets/clients/sunteck.png';
-import anarockLogo from '../assets/clients/anarock.png';
+// Import crisp full-color vector SVG client logos
+import theGuardiansLogo from '../assets/clients/the-guardians.svg';
+import justoLogo from '../assets/clients/justo.svg';
+import onboardLogo from '../assets/clients/onboard.svg';
+import theEstatemantLogo from '../assets/clients/the-estatemant.svg';
+import triveniLogo from '../assets/clients/triveni.svg';
+import veenaDeveloperLogo from '../assets/clients/veena-developer.svg';
+import sethiaLogo from '../assets/clients/sethia.svg';
+import crescentLogo from '../assets/clients/crescent.svg';
+import hawareLogo from '../assets/clients/haware.svg';
+import satvaLogo from '../assets/clients/satva.svg';
+import kanakiaLogo from '../assets/clients/kanakia.svg';
+import arkadeLogo from '../assets/clients/arkade.svg';
+import trycityLogo from '../assets/clients/trycity.svg';
+import sunteckLogo from '../assets/clients/sunteck.svg';
+import anarockLogo from '../assets/clients/anarock.svg';
 
 const clientList = [
   { name: 'The Guardians', slug: 'the-guardians', logo: theGuardiansLogo },
@@ -83,7 +83,7 @@ export default function ClientsSection() {
           </div>
         </div>
 
-        {/* Dual Infinite Scrolling Ticker (Full Color Original Logos) */}
+        {/* Dual Infinite Scrolling Ticker (Full Permanent Colors) */}
         <div className="relative w-full overflow-hidden py-4">
           {/* Gradient Masks on Left & Right for seamless fade */}
           <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-[#F8FAFC] via-[#F8FAFC]/80 to-transparent z-20 pointer-events-none" />
@@ -94,12 +94,12 @@ export default function ClientsSection() {
             {[...row1, ...row1, ...row1].map((client, idx) => (
               <div
                 key={`row1-${client.slug}-${idx}`}
-                className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
+                className="group relative flex-shrink-0 w-48 sm:w-56 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
               >
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-16 sm:max-h-18 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
+                  className="w-full h-full max-h-16 sm:max-h-20 object-contain transition-transform duration-300 transform group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
@@ -111,12 +111,12 @@ export default function ClientsSection() {
             {[...row2, ...row2, ...row2].map((client, idx) => (
               <div
                 key={`row2-${client.slug}-${idx}`}
-                className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
+                className="group relative flex-shrink-0 w-48 sm:w-56 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
               >
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-16 sm:max-h-18 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
+                  className="w-full h-full max-h-16 sm:max-h-20 object-contain transition-transform duration-300 transform group-hover:scale-105"
                   loading="lazy"
                 />
               </div>
@@ -139,11 +139,11 @@ export default function ClientsSection() {
                 className="bg-white border border-[#D6E4FF] hover:border-zion-blue rounded-xl p-4 flex flex-col items-center justify-center gap-3 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
                 style={{ transitionDelay: `${idx * 40}ms` }}
               >
-                <div className="h-14 w-full flex items-center justify-center">
+                <div className="h-16 w-full flex items-center justify-center">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-h-12 max-w-[90%] object-contain transition-transform duration-300 group-hover:scale-105"
+                    className="max-h-14 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
                     loading="lazy"
                   />
                 </div>

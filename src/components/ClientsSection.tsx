@@ -1,8 +1,40 @@
 import React from 'react';
 import { ShieldCheck, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
-import clientsData from '../data/clients.json';
 
-const clientList = clientsData;
+// Import all client logos directly so Vite bundles & resolves relative base paths correctly
+import theGuardiansLogo from '/clients/the-guardians.png';
+import justoLogo from '/clients/justo.jpg';
+import onboardLogo from '/clients/onboard.png';
+import theEstatemantLogo from '/clients/the-estatemant.png';
+import triveniLogo from '/clients/triveni.png';
+import veenaDeveloperLogo from '/clients/veena-developer.png';
+import sethiaLogo from '/clients/sethia.png';
+import crescentLogo from '/clients/crescent.png';
+import hawareLogo from '/clients/haware.png';
+import satvaLogo from '/clients/satva.png';
+import kanakiaLogo from '/clients/kanakia.png';
+import arkadeLogo from '/clients/arkade.webp';
+import trycityLogo from '/clients/trycity.png';
+import sunteckLogo from '/clients/sunteck.png';
+import anarockLogo from '/clients/anarock.png';
+
+const clientList = [
+  { name: 'The Guardians', slug: 'the-guardians', logo: theGuardiansLogo },
+  { name: 'Justo', slug: 'justo', logo: justoLogo },
+  { name: 'Onboard', slug: 'onboard', logo: onboardLogo },
+  { name: 'The Estatemant', slug: 'the-estatemant', logo: theEstatemantLogo },
+  { name: 'Triveni', slug: 'triveni', logo: triveniLogo },
+  { name: 'Veena Developer', slug: 'veena-developer', logo: veenaDeveloperLogo },
+  { name: 'Sethia', slug: 'sethia', logo: sethiaLogo },
+  { name: 'Crescent', slug: 'crescent', logo: crescentLogo },
+  { name: 'Haware', slug: 'haware', logo: hawareLogo },
+  { name: 'Satva', slug: 'satva', logo: satvaLogo },
+  { name: 'Kanakia', slug: 'kanakia', logo: kanakiaLogo },
+  { name: 'Arkade', slug: 'arkade', logo: arkadeLogo },
+  { name: 'TryCity', slug: 'trycity', logo: trycityLogo },
+  { name: 'Sunteck', slug: 'sunteck', logo: sunteckLogo },
+  { name: 'Anarock', slug: 'anarock', logo: anarockLogo },
+];
 
 export default function ClientsSection() {
   const row1 = clientList.slice(0, 8);
@@ -65,7 +97,7 @@ export default function ClientsSection() {
                 className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-4 flex items-center justify-center shadow-sm hover:shadow-lg transition-all duration-300 card-lift"
               >
                 <img
-                  src={client.localPath}
+                  src={client.logo}
                   alt={client.name}
                   className="max-h-14 sm:max-h-16 max-w-[85%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105"
                   loading="lazy"
@@ -85,7 +117,7 @@ export default function ClientsSection() {
                 className="group relative flex-shrink-0 w-44 sm:w-52 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-4 flex items-center justify-center shadow-sm hover:shadow-lg transition-all duration-300 card-lift"
               >
                 <img
-                  src={client.localPath}
+                  src={client.logo}
                   alt={client.name}
                   className="max-h-14 sm:max-h-16 max-w-[85%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 transform group-hover:scale-105"
                   loading="lazy"
@@ -115,7 +147,7 @@ export default function ClientsSection() {
               >
                 <div className="h-12 w-full flex items-center justify-center">
                   <img
-                    src={client.localPath}
+                    src={client.logo}
                     alt={client.name}
                     className="max-h-10 max-w-[85%] object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
                     loading="lazy"

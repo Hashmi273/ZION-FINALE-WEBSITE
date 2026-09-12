@@ -1,22 +1,22 @@
 import React from 'react';
 import { ShieldCheck, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
 
-// Import all client logos directly so Vite bundles & resolves relative base paths correctly
-import theGuardiansLogo from '/clients/the-guardians.png';
-import justoLogo from '/clients/justo.jpg';
-import onboardLogo from '/clients/onboard.png';
-import theEstatemantLogo from '/clients/the-estatemant.png';
-import triveniLogo from '/clients/triveni.png';
-import veenaDeveloperLogo from '/clients/veena-developer.png';
-import sethiaLogo from '/clients/sethia.png';
-import crescentLogo from '/clients/crescent.png';
-import hawareLogo from '/clients/haware.png';
-import satvaLogo from '/clients/satva.png';
-import kanakiaLogo from '/clients/kanakia.png';
-import arkadeLogo from '/clients/arkade.webp';
-import trycityLogo from '/clients/trycity.png';
-import sunteckLogo from '/clients/sunteck.png';
-import anarockLogo from '/clients/anarock.png';
+// Import all client logos from src/assets/clients so Vite bundles them as hashed assets
+import theGuardiansLogo from '../assets/clients/the-guardians.png';
+import justoLogo from '../assets/clients/justo.jpg';
+import onboardLogo from '../assets/clients/onboard.png';
+import theEstatemantLogo from '../assets/clients/the-estatemant.png';
+import triveniLogo from '../assets/clients/triveni.png';
+import veenaDeveloperLogo from '../assets/clients/veena-developer.png';
+import sethiaLogo from '../assets/clients/sethia.png';
+import crescentLogo from '../assets/clients/crescent.png';
+import hawareLogo from '../assets/clients/haware.png';
+import satvaLogo from '../assets/clients/satva.png';
+import kanakiaLogo from '../assets/clients/kanakia.png';
+import arkadeLogo from '../assets/clients/arkade.webp';
+import trycityLogo from '../assets/clients/trycity.png';
+import sunteckLogo from '../assets/clients/sunteck.png';
+import anarockLogo from '../assets/clients/anarock.png';
 
 const clientList = [
   { name: 'The Guardians', slug: 'the-guardians', logo: theGuardiansLogo },

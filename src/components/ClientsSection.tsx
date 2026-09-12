@@ -1,5 +1,4 @@
 import React from 'react';
-import { ShieldCheck, Sparkles, TrendingUp, CheckCircle2 } from 'lucide-react';
 
 // Exact original client images from clickconnectmedia.in
 import theGuardiansLogo from '../assets/clients/the-guardians.png';
@@ -13,7 +12,7 @@ import crescentLogo from '../assets/clients/crescent.png';
 import hawareLogo from '../assets/clients/haware.png';
 import satvaLogo from '../assets/clients/satva.png';
 import kanakiaLogo from '../assets/clients/kanakia.png';
-import arkadeLogo from '../assets/clients/arkade.webp';
+import arkadeLogo from '../assets/clients/arkade.png';
 import trycityLogo from '../assets/clients/trycity.png';
 import sunteckLogo from '../assets/clients/sunteck.png';
 import anarockLogo from '../assets/clients/anarock.png';
@@ -41,117 +40,119 @@ export default function ClientsSection() {
   const row2 = clientList.slice(8);
 
   return (
-    <section id="clients" className="py-20 relative bg-white border-b border-[#E2E8F0] overflow-hidden">
-      {/* Background ambient lighting */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#EEF4FF]/40 via-white to-white pointer-events-none" />
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-gradient-to-r from-[#D6E4FF]/40 via-[#FF6B00]/06 to-[#D6E4FF]/40 rounded-full blur-[100px] pointer-events-none" />
+    <section id="clients" className="py-20 relative bg-[#FFFFFF] border-b border-[#E2E8F0] overflow-hidden">
+      {/* Background Subtle Tech Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(#082844_1px,transparent_1px)] [background-size:36px_36px] opacity-[0.035] pointer-events-none" />
 
-      <div className="container mx-auto px-6 relative z-10">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         
-        {/* Header Badge & Title */}
-        <div className="flex flex-col items-center text-center max-w-3xl mx-auto mb-14 reveal">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#D6E4FF] bg-[#EEF4FF] mb-4">
-            <span className="w-2 h-2 rounded-full bg-zion-orange shadow-[0_0_6px_#FF6B00]" />
-            <span className="text-xs font-bold text-zion-blue uppercase tracking-wider">
-              Trusted Enterprise Client Base
-            </span>
-            <Sparkles className="w-3.5 h-3.5 text-zion-orange" />
+        {/* Exact Header matching clickconnectmedia.in */}
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal">
+          <div>
+            <div className="inline-flex items-center gap-2 mb-3">
+              <span className="w-6 h-[2px] bg-zion-orange rounded-full" />
+              <span className="text-[11px] font-extrabold uppercase tracking-[0.16em] text-zion-orange">
+                Trusted by Businesses
+              </span>
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#102338] tracking-tight">
+              Brand working with us
+            </h2>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-zion-deep-blue mb-4 tracking-tight">
-            Trusted by India’s Leading <span className="text-zion-orange">Brands & Enterprises</span>
-          </h2>
-          
-          <p className="text-base sm:text-lg text-zion-dark-gray font-normal max-w-2xl">
-            Powering mission-critical SMS, RCS, WhatsApp Business API, and automated voice campaigns for premier real estate developers, financial firms, and high-growth brands.
-          </p>
-        </div>
-
-        {/* Quick Trust Highlights Pill Bar */}
-        <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mb-12 reveal">
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
-            <CheckCircle2 className="w-4 h-4 text-zion-orange" />
-            <span>500+ Enterprise Deployments</span>
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
-            <ShieldCheck className="w-4 h-4 text-zion-blue" />
-            <span>100% TRAI & DLT Compliant Routes</span>
-          </div>
-          <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#EEF4FF] border border-[#D6E4FF] text-xs sm:text-sm font-semibold text-zion-deep-blue shadow-sm">
-            <TrendingUp className="w-4 h-4 text-emerald-600" />
-            <span>99.9% On-Time Delivery Rate</span>
+          <div className="hidden md:flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full border border-[#D6E4FF] bg-[#EEF4FF] flex items-center justify-center text-zion-blue shadow-sm">
+              <svg className="w-4 h-4 rotate-180" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
+            <div className="w-10 h-10 rounded-full border border-[#D6E4FF] bg-[#EEF4FF] flex items-center justify-center text-zion-blue shadow-sm">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </div>
           </div>
         </div>
 
-        {/* Dual Infinite Scrolling Ticker (Exact original image files as on clickconnectmedia.in) */}
-        <div className="relative w-full overflow-hidden py-4">
-          {/* Gradient Masks on Left & Right for seamless fade */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-32 bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
+        {/* Dual Infinite Scrolling Ticker (Full-Frame Original Cards) */}
+        <div className="relative w-full overflow-hidden py-2">
+          {/* Gradient Masks */}
+          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-r from-white via-white/80 to-transparent z-20 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-28 bg-gradient-to-l from-white via-white/80 to-transparent z-20 pointer-events-none" />
 
           {/* Row 1 - Marquee Forward */}
-          <div className="animate-marquee gap-5 sm:gap-7 mb-5">
+          <div className="animate-marquee gap-4 sm:gap-6 mb-4">
             {[...row1, ...row1, ...row1].map((client, idx) => (
               <div
                 key={`row1-${client.slug}-${idx}`}
-                className="group relative flex-shrink-0 w-48 sm:w-56 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
+                className="flex-shrink-0 w-[210px] sm:w-[250px] h-[105px] sm:h-[125px] rounded-[16px] bg-[#FFFFFF] border border-[#E4E9EE] p-2 sm:p-3 flex items-center justify-center shadow-[0_10px_26px_rgba(7,25,45,0.075)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.14)] hover:border-zion-orange/60 transition-all duration-300"
               >
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-16 sm:max-h-20 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
+                  className="w-full h-full object-contain max-h-[85px] sm:max-h-[100px] pointer-events-none"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             ))}
           </div>
 
           {/* Row 2 - Marquee Reverse */}
-          <div className="animate-marquee-reverse gap-5 sm:gap-7">
+          <div className="animate-marquee-reverse gap-4 sm:gap-6">
             {[...row2, ...row2, ...row2].map((client, idx) => (
               <div
                 key={`row2-${client.slug}-${idx}`}
-                className="group relative flex-shrink-0 w-48 sm:w-56 h-24 sm:h-28 rounded-2xl bg-white border border-[#D6E4FF] hover:border-zion-orange p-3 flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 card-lift"
+                className="flex-shrink-0 w-[210px] sm:w-[250px] h-[105px] sm:h-[125px] rounded-[16px] bg-[#FFFFFF] border border-[#E4E9EE] p-2 sm:p-3 flex items-center justify-center shadow-[0_10px_26px_rgba(7,25,45,0.075)] hover:shadow-[0_14px_30px_rgba(0,0,0,0.14)] hover:border-zion-orange/60 transition-all duration-300"
               >
                 <img
                   src={client.logo}
                   alt={client.name}
-                  className="max-h-16 sm:max-h-20 max-w-[90%] object-contain transition-transform duration-300 transform group-hover:scale-105"
+                  className="w-full h-full object-contain max-h-[85px] sm:max-h-[100px] pointer-events-none"
                   loading="lazy"
+                  decoding="async"
                 />
               </div>
             ))}
           </div>
         </div>
 
-        {/* Client Grid Showcase */}
-        <div className="mt-14 pt-12 border-t border-[#EEF4FF] reveal">
-          <div className="text-center mb-8">
-            <span className="text-xs font-bold uppercase tracking-widest text-zion-blue">
-              Featured Client Network
-            </span>
+        {/* Exact Proof Metrics Strip matching clickconnectmedia.in */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 mt-12 border-t border-[#E2E7EC] reveal">
+          <div className="text-center md:border-r border-[#E1E6EB] px-4">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-black text-zion-orange mb-1 tracking-tight">
+              8+
+            </div>
+            <div className="text-[11px] sm:text-xs font-bold text-[#607080] uppercase tracking-wider">
+              Years of Excellence
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 sm:gap-6 max-w-6xl mx-auto">
-            {clientList.map((client, idx) => (
-              <div
-                key={client.slug}
-                className="bg-white border border-[#D6E4FF] hover:border-zion-blue rounded-xl p-4 flex flex-col items-center justify-center gap-3 shadow-sm hover:shadow-md transition-all duration-300 group hover:-translate-y-1"
-                style={{ transitionDelay: `${idx * 40}ms` }}
-              >
-                <div className="h-16 w-full flex items-center justify-center">
-                  <img
-                    src={client.logo}
-                    alt={client.name}
-                    className="max-h-14 max-w-full object-contain transition-transform duration-300 group-hover:scale-105"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="text-[11px] font-bold text-zion-deep-blue group-hover:text-zion-orange transition-colors text-center truncate w-full">
-                  {client.name}
-                </div>
-              </div>
-            ))}
+          <div className="text-center md:border-r border-[#E1E6EB] px-4">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-black text-zion-orange mb-1 tracking-tight">
+              1,000+
+            </div>
+            <div className="text-[11px] sm:text-xs font-bold text-[#607080] uppercase tracking-wider">
+              Enterprise Clients
+            </div>
+          </div>
+
+          <div className="text-center md:border-r border-[#E1E6EB] px-4">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-black text-zion-orange mb-1 tracking-tight">
+              100+
+            </div>
+            <div className="text-[11px] sm:text-xs font-bold text-[#607080] uppercase tracking-wider">
+              Five-Star Ratings
+            </div>
+          </div>
+
+          <div className="text-center px-4">
+            <div className="text-3xl sm:text-4xl md:text-5xl font-black text-zion-orange mb-1 tracking-tight">
+              98%
+            </div>
+            <div className="text-[11px] sm:text-xs font-bold text-[#607080] uppercase tracking-wider">
+              Client Retention
+            </div>
           </div>
         </div>
 
